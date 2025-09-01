@@ -98,7 +98,11 @@ int main()
     return 0;
 }
 ```
+
 ## Output:
+<img width="872" height="535" alt="image" src="https://github.com/user-attachments/assets/5eaaa10a-c332-4e22-ba9e-21316745c422" />
+
+## Result:
 ```
 Input:
 5
@@ -111,6 +115,3 @@ After DeQueue :30 40 50
 Queue Front : 30
 Queue Rear : 50
 ```
-## Result:
-<img width="872" height="535" alt="image" src="https://github.com/user-attachments/assets/5eaaa10a-c332-4e22-ba9e-21316745c422" />
-
