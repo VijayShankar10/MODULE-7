@@ -79,7 +79,11 @@ int main(){
     
 }
 ```
+
 ## Output:
+<img width="862" height="384" alt="image" src="https://github.com/user-attachments/assets/bff82c3f-677b-4ff3-83ab-0dd18be65189" />
+
+## Result:
 ```
 Input:
 ((a+(b*c))-d)
@@ -97,6 +101,3 @@ Output:
 +*AB/CD
 
 ```
-## Result:
-<img width="862" height="384" alt="image" src="https://github.com/user-attachments/assets/bff82c3f-677b-4ff3-83ab-0dd18be65189" />
-
