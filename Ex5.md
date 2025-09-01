@@ -44,13 +44,14 @@ int main()
     return 0;
 }
 ```
+
 ## Output:
+<img width="863" height="370" alt="image" src="https://github.com/user-attachments/assets/b91c2c79-ec23-4b09-87ba-ba8d2494622e" />
+
+## Result:
 ```
 Processes BT time WT time TA time
 1 10 0 10
 2 5 10 15
 3 8 15 23
 ```
-## Result:
-<img width="863" height="370" alt="image" src="https://github.com/user-attachments/assets/b91c2c79-ec23-4b09-87ba-ba8d2494622e" />
-
