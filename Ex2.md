@@ -86,7 +86,11 @@ int main()
 	return 0;
 }
 ```
+
 ## Output:
+<img width="862" height="545" alt="image" src="https://github.com/user-attachments/assets/a528c5f1-850f-4699-967a-328bd2a7aa3c" />
+
+## Result:
 ```
 Input:
 5
@@ -99,6 +103,3 @@ The top element after 1 pop operation is 40.4
 The top element after 2 pop operations is 30.3
 Size of the stack after 2 pop operations is 3
 ```
-## Result:
-<img width="862" height="545" alt="image" src="https://github.com/user-attachments/assets/a528c5f1-850f-4699-967a-328bd2a7aa3c" />
-
