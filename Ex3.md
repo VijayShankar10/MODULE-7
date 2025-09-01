@@ -1,10 +1,10 @@
 # Ex.No:3  
-# Ex.Name: Function Overriding using Virtual Functions  
+# Ex.Name: Insert five special character elements in to stack 
 
 ## Date:  
 
 ## Aim:  
-To write a C++ program to override the `print()` function in the base class with the `print()` function in the derived class using the concept of virtual functions.  
+To Write a CPP Program to insert five special character elements in to stack using linked list (use STL for Stack)
 
 ## Algorithm:  
 1. Start the program.  
@@ -16,60 +16,96 @@ To write a C++ program to override the `print()` function in the base class with
 
 ## Program:
 ```cpp
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+template <typename T>
+// templating it so that any data type can be used
 
-class Base {
+class Stack {
 public:
-    virtual void print(string msg) {
-        cout << msg << endl;
-    }
+	list<T> l;
+	float cs = 0;
+	// current size of the stack
+
+	// pushing an element into the stack
+	void push(T d)
+	{
+		cs++;
+		// increasing the current size of the stack
+		l.push_front(d);
+	}
+	// popping an element from the stack
+	void pop()
+	{
+		if (cs <= 0) {
+			// cannot pop us stack does not contain an
+			// elements
+			cout << "Stack empty" << endl;
+		}
+		else {
+			// decreasing the current size of the stack
+			cs--;
+			l.pop_front();
+		}
+	}
+	// if current size is 0 then stack is empty
+	bool empty() 
+	{ 
+	    return cs == 0; 
+	    
+	}
+	// getting the element present at the top of the stack
+	T top() { return l.front(); }
+	float size()
+	{
+		// getting the size of the stack
+		return cs;
+	}
+	// printing the elements of the stack
+	void print()
+	{
+		for (auto x: l) 
+		{
+			cout << x << endl;
+		}
+	}
 };
-
-class Derived : public Base {
-public:
-    void print(string msg) override {
-        cout << msg << endl;
-    }
-};
-
-int main() {
-    Base* basePtr;
-    Derived d;
-
-    string input;
-    cin >> input;
-
-    basePtr = &d;
-    basePtr->print(input);
-
-    return 0;
+int main()
+{
+    float n;
+    char num;
+    cin>>n;
+	Stack<char> s;
+	for(int i=0;i<n;i++)
+	{
+	    cin>>num;
+	    s.push(num);
+	}
+	cout << "Current size of the stack is " << s.size() << endl;
+	cout << "The top element of the stack is " << s.top() << endl;
+	s.pop(); 
+	cout << "The top element after 1 pop operation is " << s.top() << endl;
+	s.pop();
+	cout << "The top element after 2 pop operations is " << s.top() << endl;
+	cout << "Size of the stack after 2 pop operations is " << s.size() << endl;
+	return 0;
 }
 ```
 
 ## Output:
 ```
 Input:
-VirtualOne
+5
+@ # $ % ^
 
 Output:
-VirtualOne
-
-
-
-Input:
-VirtualTwo
-
-Output:
-VirtualTwo
-
-
-Input:
-VirtualThree
-
-Output:
-VirtualThree
+Current size of the stack is 5
+The top element of the stack is ^
+The top element after 1 pop operation is %
+The top element after 2 pop operations is $
+Size of the stack after 2 pop operations is 3
 ```
 ## Result:
-<img width="866" height="365" alt="image" src="https://github.com/user-attachments/assets/bb1f3dbd-dad3-4631-b8fb-fd9856d90f7d" />
+<img width="1203" height="525" alt="image" src="https://github.com/user-attachments/assets/040d67a9-170b-42a1-996d-9346e19f4fa6" />
+
 
